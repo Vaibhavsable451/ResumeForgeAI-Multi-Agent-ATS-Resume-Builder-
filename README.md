@@ -1,69 +1,80 @@
 # ResumeForgeAI-Multi-Agent-ATS-Resume-Builder-
-# 🚀 ResumeForge AI
+# ResumeForge AI 🚀
 
-### AI-Powered Multi-Agent ATS Resume Builder
+## AI-Powered Multi-Agent ATS Resume Builder
 
 ResumeForge AI is an intelligent resume generation platform that creates ATS-optimized resumes tailored to specific job descriptions using AI Agents and Large Language Models (LLMs).
 
-The system analyzes job descriptions, extracts relevant skills and keywords, evaluates GitHub projects and portfolio information, and generates professional resumes with downloadable PDF support.
+The platform analyzes job descriptions, GitHub projects, portfolio information, and existing resumes to generate professional, recruiter-friendly resumes with ATS score analysis and PDF export functionality.
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
 ### 📄 ATS Resume Generation
 
 * Generate ATS-friendly resumes from job descriptions.
-* Optimized keyword matching for higher recruiter visibility.
+* Optimize keyword matching for recruiter visibility.
 * Professional resume formatting.
 
 ### 🤖 AI-Powered Resume Writing
 
-* Uses Groq LLM for intelligent resume generation.
-* Tailors skills, projects, and summaries to job requirements.
-* Generates recruiter-friendly content automatically.
+* Powered by Groq LLM.
+* Tailors resume content according to job requirements.
+* Generates professional summaries, skills, and project descriptions.
 
 ### 💻 GitHub Profile Analysis
 
 * Extracts repositories and technologies.
-* Identifies relevant projects for inclusion in resumes.
-* Highlights technical experience.
+* Identifies relevant projects automatically.
+* Highlights technical expertise.
 
 ### 🌐 Portfolio Analysis
 
 * Reads portfolio website content.
 * Extracts skills, projects, and achievements.
-* Enhances resume relevance.
+* Improves resume relevance.
 
 ### 📊 ATS Score Analysis
 
 * Matches resume against job description.
-* Identifies missing keywords.
-* Provides optimization suggestions.
+* Detects missing keywords.
+* Provides ATS improvement recommendations.
 
 ### 📑 PDF Resume Export
 
 * Generates clean ATS-compatible PDF resumes.
 * Professional formatting using ReportLab.
-* One-click download functionality.
+* One-click PDF download.
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ Multi-Agent Architecture
 
+```text
 Job Description
-↓
+        │
+        ▼
+JD Analysis Agent
+        │
+        ▼
 GitHub Analyzer Agent
-↓
+        │
+        ▼
 Portfolio Analyzer Agent
-↓
+        │
+        ▼
 Resume Generation Agent (Groq)
-↓
+        │
+        ▼
 ATS Score Agent
-↓
-PDF Generator
-↓
-Download Resume
+        │
+        ▼
+PDF Generator Agent
+        │
+        ▼
+Download ATS Resume
+```
 
 ---
 
@@ -100,39 +111,29 @@ Download Resume
 
 ## 📂 Project Structure
 
-ResumeForge-AI/
+```text
+ResumeForgeAI/
 
 ├── agents/
-
-│ ├── groq_agent.py
-
-│ ├── github_agent.py
-
-│ ├── portfolio_agent.py
-
-│ ├── ats_agent.py
-
-│ └── resume_agent.py
-
+│   ├── groq_agent.py
+│   ├── github_agent.py
+│   ├── portfolio_agent.py
+│   ├── ats_agent.py
+│   └── resume_agent.py
+│
 ├── utils/
-
-│ ├── parser.py
-
-│ ├── pdf_generator.py
-
-│ └── latex_generator.py
-
+│   ├── parser.py
+│   ├── pdf_generator.py
+│   └── latex_generator.py
+│
 ├── generated/
-
+│
 ├── app.py
-
 ├── requirements.txt
-
 ├── .env.example
-
 ├── .gitignore
-
 └── README.md
+```
 
 ---
 
@@ -153,13 +154,13 @@ python -m venv venv
 
 ### Activate Environment
 
-Windows
+#### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-Linux/Mac
+#### Linux / Mac
 
 ```bash
 source venv/bin/activate
@@ -205,22 +206,24 @@ streamlit run app.py
 
 ## 🎯 Future Enhancements
 
-* Multi-Agent Workflow using LangGraph
-* Resume Version History
+* LangGraph Multi-Agent Workflow
 * LinkedIn Profile Integration
+* Resume Version History
 * Vector Database Memory
 * AI Interview Preparation
-* Multi-Format Resume Templates
+* Multiple Resume Templates
 * Cover Letter Generator
 * Recruiter Dashboard
+* Skill Gap Analysis
+* Keyword Match Visualization
 
 ---
 
 ## 👨‍💻 Author
 
-Vaibhav Sable
+**Vaibhav Sable**
 
-Generative AI Developer
+Generative AI Developer | AI Agents | RAG | LLMs | Groq | Streamlit
 
 GitHub: https://github.com/Vaibhavsable451
 
@@ -230,4 +233,6 @@ Portfolio: https://portfolio-vkkz.onrender.com
 
 ---
 
-⭐ If you found this project useful, please give it a star.
+## ⭐ Support
+
+If you found this project useful, please consider giving it a Star on GitHub.
